@@ -1,13 +1,12 @@
-import ItemList from "./components/ItemList/ItemList"
-import Nav from "./components/navbar/Nav"
 
-
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import NavBar from "./components/navbar/NavBar"
 
 const App = () => {
   return(
   <>
-      <Nav/>
-      <ItemList/>
+      <NavBar/>
+      <ItemListContainer greeting="PRODUCTOS"/>
   </>
   )
 }

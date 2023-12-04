@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
 import { SiNike } from "react-icons/si";
 import NavLink from "./NavLink";
 import NavBurger from "./NavBurger";
+import CartWidget from "../CartWidget/CartWidget";
 
-const Nav = () => {
+const NavBar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -27,7 +27,7 @@ const Nav = () => {
                 <NavLink href={"#"} text={"Productos"} />
               </li>
               <li className=" py-4 m-auto border-b border-slate-800 hover:text-slate-900 hover:rounded ">
-                <NavLink href={"#"} text={<FaShoppingCart/>} />
+                <NavLink text={<CartWidget/>}/>
               </li>
             </ul>
           </div>
@@ -47,4 +47,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavBar;
