@@ -4,9 +4,9 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const CartWidget = () => {
     return(
-    <div className="relative ">  
+    <div className="relative flex items-center  ">
             <FaShoppingCart />
-            <span className="absolute">01</span>
+            <span className="  " >01</span>
     </div>
     )
 }

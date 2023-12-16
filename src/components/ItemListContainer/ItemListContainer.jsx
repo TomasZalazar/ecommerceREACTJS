@@ -1,15 +1,20 @@
+import React from 'react';
+import useProductos from "../../hooks/useProductos";
+import ItemList from "../itemList/ItemList";
+import { useParams } from 'react-router-dom';
 
-import ItemListEfect from "./ItemListEfect"
-export const ItemListContainer = ({greeting}) => {
-    return (
-        <div className="flex flex-wrap justify-center m-4 p-6 gap-5 relative z-1">
-            <div className="container flex justify-evenly">
-                <p>{greeting}</p>
-            </div>
-            <ItemListEfect imageSrc={"../src/assets/zapatillas/nikezapatilla1.webp"} title={"Nike Air Force 1"} subtitle={"Envio Gratis"} />
-            <ItemListEfect imageSrc={"../src/assets/zapatillas/nikezapatilla2.webp"} title={"Nike Air Force 1"} subtitle={"Envío gratis"} />
-        </div>
-    )
-}
+const ItemListContainer = () => {
+  const {categoriaId} = useParams()
+  const { productos, loading} = useProductos(categoriaId);
+  return (
+    <div className="">
+      {loading ? (
+        <h2 className="text-center text-4xl mt-8">Cargando...</h2>
+      ) : (
+        <ItemList productos={productos} />
+      )}
+    </div>
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;
