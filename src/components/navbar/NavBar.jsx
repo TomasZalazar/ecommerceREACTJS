@@ -7,7 +7,7 @@ import CartWidget from "../CartWidget/CartWidget";
 const NavBar = () => {
   const links = [
     {
-      label: "Todos los productos",
+      label: "Inicio",
       href: "/",
     },
     {
@@ -33,7 +33,13 @@ const NavBar = () => {
       <div className="h-10vh flex relative  justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
         <div className="flex items-center flex-1 ">
           <span className="mx-4 font-bold text-xl text-center">
-            TZ <small className="flex flex-col text-xs">TodoZapas</small>
+            TZ 
+            <small className="flex flex-col text-xs ">
+              <Link
+              to="/">
+                TodoZapas 
+                 </Link>
+            </small>
           </span>
         </div>
         <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">

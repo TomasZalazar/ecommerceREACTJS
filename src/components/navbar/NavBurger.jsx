@@ -48,21 +48,3 @@ const NavBurger = ({ isOpen}) => {
 };
 
 export default NavBurger;
-{/* <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
-          <div className="flex-10">
-            <ul className="flex gap-8 mr-16 text-18">
-              
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="text-white hover:text-black text-lg uppercase font-semibold"
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <li className=" m-auto border-b border-sky-800 cursor-pointer hover:text-sky-900 hover:rounded ">
-                <CartWidget/>
-              </li>
-            </ul>
-          </div> */}

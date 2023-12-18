@@ -14,7 +14,7 @@ export const MisProductos = [
       detail4:imagen2,
     }, 
     categoria: "nike",
-    descripcion: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    descripcion: "Las Nike Air Max 90 son un ícono de estilo que combina comodidad y moda. Con su diseño clásico y la amortiguación Air Max, estas zapatillas ofrecen un rendimiento excepcional para el día a día.",
   },
   {
     id: 2,

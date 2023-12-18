@@ -20,13 +20,13 @@ const ItemDetailContainer = () => {
   }, []);
 
   return (
-    <>
+    <div className="flex justify-center">   
       {loading ? (
         <h2 className="text-center text-4xl mt-8">Cargando...</h2>
       ) : (
         <ItemDetail item={item}/>
       )}
-    </>
+    </div>
   );
 };
 
