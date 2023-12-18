@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { SiNike } from "react-icons/si";<q></q>
 import { Link } from "react-router-dom";
-import NavBurger from "./NavBurger";
 import CartWidget from "../CartWidget/CartWidget";
+import NavBurger from "./NavBurg";
 
-const NavBar = () => {
+
+
+
+const Nav = () => {
   const links = [
     {
       label: "Inicio",
@@ -76,4 +79,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Nav;

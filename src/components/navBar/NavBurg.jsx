@@ -4,7 +4,8 @@ import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 
 
-const NavBurger = ({ isOpen}) => {
+
+export const NavBurg = ({ isOpen}) => {
   const links = [
     {
       label: "Todos los productos",
@@ -47,4 +48,4 @@ const NavBurger = ({ isOpen}) => {
   );
 };
 
-export default NavBurger;
+export default NavBurg;
