@@ -1,6 +1,6 @@
 
 import React from "react"
-import CartWidget from "../CartWidget/CartWidget";
+import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
 
@@ -12,8 +12,8 @@ export const NavBurg = ({ isOpen}) => {
       href: "/",
     },
     {
-      label: "Vans",
-      href: "/productos/vans",
+      label: "Puma",
+      href: "/productos/puma",
     },
     {
       label: "Adidas",

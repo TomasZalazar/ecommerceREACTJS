@@ -1,11 +1,11 @@
 
-import { MisProductos } from "../mock/data";
+import MOCK_DATA from "../mock/data.json";
 
 const pedirDatos = () => {
     
         return new Promise((resolve, reject) => {
           setTimeout(() => {
-            resolve(MisProductos);
+            resolve(MOCK_DATA);
           }, 500);
         });
       };

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ItemCard = ({ item }) => {
   return (
-    <div className=" w-96 h-auto bg-sky-950 p-3 flex flex-col  items-center rounded-2xl">
+    <div className=" w-96 h-auto bg-sky-800 p-3 flex flex-col  items-center rounded-2xl">
       <img
         className="duration-500 contrast-100 h-auto rounded-xl hover:contrast-125"
         src={item.img}

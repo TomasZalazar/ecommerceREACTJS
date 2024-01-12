@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { SiNike } from "react-icons/si";<q></q>
+import { SiNike } from "react-icons/si";
 import { Link } from "react-router-dom";
-import CartWidget from "../CartWidget/CartWidget";
+import CartWidget from "./CartWidget";
 import NavBurger from "./NavBurg";
+
 
 
 
@@ -12,10 +13,11 @@ const Nav = () => {
     {
       label: "Inicio",
       href: "/",
+      
     },
     {
-      label: "Vans",
-      href: "/productos/vans",
+      label: "Puma",
+      href: "/productos/puma",
     },
     {
       label: "Adidas",
@@ -26,15 +28,16 @@ const Nav = () => {
       href: "/productos/nike",
     },
   ];
-  const [click, setClick] = useState(false);
+  const [click,setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
   return (
-    <nav className=" bg-sky-700 ">
-      <div className="h-10vh flex relative  justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
+    <nav className=" bg-sky-700  ">
+      <div className=" flex relative  justify-between z-1000 text-white lg:py-5 px-20 py-4 flex-1">
         <div className="flex items-center flex-1 ">
+          
           <span className="mx-4 font-bold text-xl text-center">
             TZ 
             <small className="flex flex-col text-xs ">

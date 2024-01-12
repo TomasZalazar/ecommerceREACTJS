@@ -1,0 +1,564 @@
+
+
+  [
+    {
+      "id": 1,
+      "nombre": "Nike Air Max 90",
+      "precio": 1500,
+      "img": "../public/zapatillas/nikezapatilla1.webp",
+      "imgdetail": {
+        "detail2": "../public/zapatillas/nikezapatilla1.webp",
+        "detail3": "../public/zapatillas/nikezapatilla2.webp",
+        "detail4": "../public/zapatillas/nikezapatilla3.webp"
+      },
+      "categoria": "nike",
+      "descripcion": "Las Nike Air Max 90 son un ícono de estilo que combina comodidad y moda. Con su diseño clásico y la amortiguación Air Max, estas zapatillas ofrecen un rendimiento excepcional para el día a día.",
+      "stock": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Nike React Element 55",
+      "precio": 1200,
+      "img": "https://via.placeholder.com/300?text=Nike+React+Element+55",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=React+Element+55+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=React+Element+55+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=React+Element+55+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike React Element 55, combinando estilo moderno con tecnología innovadora para un rendimiento excepcional.",
+      "stock": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Nike Zoom Pegasus 38",
+      "precio": 2000,
+      "img": "https://via.placeholder.com/300?text=Nike+Zoom+Pegasus+38",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Zoom+Pegasus+38+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Zoom+Pegasus+38+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Zoom+Pegasus+38+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike Zoom Pegasus 38, ideales para corredores que buscan un calzado ligero y receptivo.",
+      "stock": 3
+    },
+    {
+      "id": 4,
+      "nombre": "Nike Joyride Run Flyknit",
+      "precio": 1600,
+      "img": "https://via.placeholder.com/300?text=Nike+Joyride+Run+Flyknit",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Joyride+Run+Flyknit+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Joyride+Run+Flyknit+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Joyride+Run+Flyknit+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike Joyride Run Flyknit, con tecnología de amortiguación que se adapta a cada paso.",
+      "stock": 4
+    },
+    {
+      "id": 5,
+      "nombre": "Nike Free RN 5.0",
+      "precio": 1400,
+      "img": "https://via.placeholder.com/300?text=Nike+Free+RN+5.0",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Free+RN+5.0+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Free+RN+5.0+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Free+RN+5.0+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike Free RN 5.0, diseñadas para una sensación natural y flexible al correr.",
+      "stock": 5
+    },
+    {
+      "id": 6,
+      "nombre": "Nike Blazer Mid '77",
+      "precio": 1700,
+      "img": "https://via.placeholder.com/300?text=Nike+Blazer+Mid+'77",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Blazer+Mid+'77+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Blazer+Mid+'77+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Blazer+Mid+'77+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike Blazer Mid '77, un clásico reinventado con estilo retro y moderno.",
+      "stock": 6
+    },
+    {
+      "id": 7,
+      "nombre": "Nike Air Zoom SuperRep",
+      "precio": 1900,
+      "img": "https://via.placeholder.com/300?text=Nike+Air+Zoom+SuperRep",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Air+Zoom+SuperRep+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Air+Zoom+SuperRep+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Air+Zoom+SuperRep+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike Air Zoom SuperRep, diseñadas para entrenamientos de alta intensidad y actividades de gimnasio.",
+      "stock": 7
+    },
+    {
+      "id": 8,
+      "nombre": "Nike React Infinity Run",
+      "precio": 2200,
+      "img": "https://via.placeholder.com/300?text=Nike+React+Infinity+Run",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=React+Infinity+Run+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=React+Infinity+Run+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=React+Infinity+Run+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike React Infinity Run, con amortiguación suave y continua para carreras cómodas y largas.",
+      "stock": 8
+    },
+    {
+      "id": 9,
+      "nombre": "Nike Air Max 270",
+      "precio": 2000,
+      "img": "https://via.placeholder.com/300?text=Nike+Air+Max+270",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Air+Max+270+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Air+Max+270+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Air+Max+270+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Nike Air Max 270, con una unidad Air Max grande y diseño moderno para un estilo llamativo y comodidad durante todo el día.",
+      "stock": 9
+    },
+    {
+      "id": 10,
+      "nombre": "Nike Air Force 1",
+      "precio": 1800,
+      "img": "https://via.placeholder.com/300?text=Nike+Air+Force+1",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Air+Force+1+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Air+Force+1+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Air+Force+1+Detail4"
+      },
+      "categoria": "nike",
+      "descripcion": "Zapatillas Nike Air Force 1, un clásico que nunca pasa de moda, con un diseño icónico y versátil.",
+      "stock": 10
+    },
+    {
+      "id": 11,
+      "nombre": "Adidas Ultraboost",
+      "precio": 1600,
+      "img": "https://via.placeholder.com/300?text=Adidas+Ultraboost",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Ultraboost+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Ultraboost+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Ultraboost+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Ultraboost, diseñadas para un rendimiento superior y comodidad durante la carrera.",
+      "stock": 11
+    },
+    {
+      "id": 12,
+      "nombre": "Adidas NMD R1",
+      "precio": 1400,
+      "img": "https://via.placeholder.com/300?text=Adidas+NMD+R1",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=NMD+R1+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=NMD+R1+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=NMD+R1+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas NMD R1, con un estilo urbano y detalles modernos para un look distintivo.",
+      "stock": 12
+    },
+    {
+      "id": 13,
+      "nombre": "Adidas Superstar",
+      "precio": 1300,
+      "img": "https://via.placeholder.com/300?text=Adidas+Superstar",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Superstar+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Superstar+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Superstar+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Superstar, un clásico atemporal con el distintivo shell toe.",
+      "stock": 13
+    },
+    {
+      "id": 14,
+      "nombre": "Adidas Stan Smith",
+      "precio": 1200,
+      "img": "https://via.placeholder.com/300?text=Adidas+Stan+Smith",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Stan+Smith+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Stan+Smith+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Stan+Smith+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Stan Smith, un clásico de tenis con un diseño limpio y minimalista.",
+      "stock": 14
+    },
+    {
+      "id": 15,
+      "nombre": "Adidas Originals Nite Jogger",
+      "precio": 1800,
+      "img": "https://via.placeholder.com/300?text=Adidas+Originals+Nite+Jogger",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Nite+Jogger+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Nite+Jogger+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Nite+Jogger+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Originals Nite Jogger, con detalles reflectantes para un estilo moderno y funcional.",
+      "stock": 15
+    },
+    {
+      "id": 16,
+      "nombre": "Adidas Falcon",
+      "precio": 1500,
+      "img": "https://via.placeholder.com/300?text=Adidas+Falcon",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Falcon+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Falcon+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Falcon+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Falcon, con un diseño retro y detalles de colores llamativos para un estilo audaz.",
+      "stock": 16
+    },
+    {
+      "id": 17,
+      "nombre": "Adidas Yeezy Boost 350 V2",
+      "precio": 2500,
+      "img": "https://via.placeholder.com/300?text=Adidas+Yeezy+Boost+350+V2",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Yeezy+Boost+350+V2+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Yeezy+Boost+350+V2+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Yeezy+Boost+350+V2+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Yeezy Boost 350 V2, con un diseño vanguardista y tecnología de vanguardia.",
+      "stock": 17
+    },
+    {
+      "id": 18,
+      "nombre": "Adidas EQT Support ADV",
+      "precio": 1600,
+      "img": "https://via.placeholder.com/300?text=Adidas+EQT+Support+ADV",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=EQT+Support+ADV+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=EQT+Support+ADV+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=EQT+Support+ADV+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas EQT Support ADV, con un estilo elegante y tecnología que brinda soporte y comodidad.",
+      "stock": 18
+    },
+    {
+      "id": 19,
+      "nombre": "Adidas Harden Vol. 5",
+      "precio": 1900,
+      "img": "https://via.placeholder.com/300?text=Adidas+Harden+Vol.+5",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Harden+Vol.+5+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Harden+Vol.+5+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Harden+Vol.+5+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Harden Vol. 5, diseñadas para el juego ágil y explosivo de James Harden.",
+      "stock": 19
+    },
+    {
+      "id": 20,
+      "nombre": "Adidas Ozweego",
+      "precio": 1700,
+      "img": "https://via.placeholder.com/300?text=Adidas+Ozweego",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Ozweego+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Ozweego+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Ozweego+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Ozweego, con un diseño futurista y detalles de alto rendimiento.",
+      "stock": 20
+    },
+    {
+      "id": 21,
+      "nombre": "Puma RS-X",
+      "precio": 1500,
+      "img": "https://via.placeholder.com/300?text=Puma+RS-X",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=RS-X+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=RS-X+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=RS-X+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma RS-X, con un diseño retro y detalles de alta tecnología para un estilo único.",
+      "stock": 21
+    },
+    {
+      "id": 22,
+      "nombre": "Puma Clyde Hardwood",
+      "precio": 1300,
+      "img": "https://via.placeholder.com/300?text=Puma+Clyde+Hardwood",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Clyde+Hardwood+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Clyde+Hardwood+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Clyde+Hardwood+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Clyde Hardwood, una combinación de estilo clásico y rendimiento en la cancha.",
+      "stock": 22
+    },
+    {
+      "id": 23,
+      "nombre": "Puma Future Rider",
+      "precio": 1200,
+      "img": "https://via.placeholder.com/300?text=Puma+Future+Rider",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Future+Rider+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Future+Rider+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Future+Rider+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Future Rider, inspiradas en el estilo de los corredores de los años 80 con un toque moderno.",
+      "stock": 23
+    },
+    {
+      "id": 24,
+      "nombre": "Puma Calibrate Runner",
+      "precio": 1400,
+      "img": "https://via.placeholder.com/300?text=Puma+Calibrate+Runner",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Calibrate+Runner+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Calibrate+Runner+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Calibrate+Runner+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Calibrate Runner, con tecnología de amortiguación para una comodidad excepcional.",
+      "stock": 24
+    },
+    {
+      "id": 25,
+      "nombre": "Puma Mirage Tech",
+      "precio": 1600,
+      "img": "https://via.placeholder.com/300?text=Puma+Mirage+Tech",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Mirage+Tech+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Mirage+Tech+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Mirage+Tech+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Mirage Tech, con un diseño retro-futurista y detalles de alto rendimiento.",
+      "stock": 25
+    },
+    {
+      "id": 26,
+      "nombre": "Puma UltraRide",
+      "precio": 1800,
+      "img": "https://via.placeholder.com/300?text=Puma+UltraRide",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=UltraRide+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=UltraRide+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=UltraRide+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma UltraRide, diseñadas para la velocidad y el rendimiento en carreras.",
+      "stock": 26
+    },
+    {
+      "id": 27,
+      "nombre": "Puma Ralph Sampson",
+      "precio": 2000,
+      "img": "https://via.placeholder.com/300?text=Puma+Ralph+Sampson",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Ralph+Sampson+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Ralph+Sampson+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Ralph+Sampson+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Ralph Sampson, un clásico de las canchas con un toque de estilo moderno.",
+      "stock": 27
+    },
+    {
+      "id": 28,
+      "nombre": "Puma Enzo 2",
+      "precio": 2200,
+      "img": "https://via.placeholder.com/300?text=Puma+Enzo+2",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Enzo+2+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Enzo+2+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Enzo+2+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Enzo 2, con un diseño moderno y tecnología de alto rendimiento para tus entrenamientos.",
+      "stock": 28
+    },
+    {
+      "id": 29,
+      "nombre": "Puma Ignite Flash EvoKnit",
+      "precio": 2400,
+      "img": "https://via.placeholder.com/300?text=Puma+Ignite+Flash+EvoKnit",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Ignite+Flash+EvoKnit+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Ignite+Flash+EvoKnit+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Ignite+Flash+EvoKnit+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Ignite Flash EvoKnit, con un ajuste perfecto y comodidad durante todo el día.",
+      "stock": 29
+    },
+    {
+      "id": 30,
+      "nombre": "Puma Cell Pharos",
+      "precio": 1400,
+      "img": "https://via.placeholder.com/300?text=Puma+Cell+Pharos",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Cell+Pharos+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Cell+Pharos+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Cell+Pharos+Detail4"
+      },
+      "categoria": "puma",
+      "descripcion": "Zapatillas Puma Cell Pharos, con un diseño llamativo y tecnología de amortiguación avanzada.",
+      "stock": 30
+    },
+    {
+      "id": 31,
+      "nombre": "Adidas Nite Jogger",
+      "precio": 1800,
+      "img": "https://via.placeholder.com/300?text=Adidas+Nite+Jogger",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Nite+Jogger+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Nite+Jogger+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Nite+Jogger+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Nite Jogger, con detalles reflectantes y diseño moderno para un estilo urbano.",
+      "stock": 31
+    },
+    {
+      "id": 32,
+      "nombre": "Adidas Swift Run",
+      "precio": 1600,
+      "img": "https://via.placeholder.com/300?text=Adidas+Swift+Run",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Swift+Run+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Swift+Run+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Swift+Run+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Swift Run, ligeras y cómodas, ideales para el uso diario y la moda urbana.",
+      "stock": 32
+    },
+    {
+      "id": 33,
+      "nombre": "Adidas Prophere",
+      "precio": 1400,
+      "img": "https://via.placeholder.com/300?text=Adidas+Prophere",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Prophere+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Prophere+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Prophere+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Prophere, con un diseño audaz y detalles contemporáneos para un estilo único.",
+      "stock": 33
+    },
+    {
+      "id": 34,
+      "nombre": "Adidas Solar Boost",
+      "precio": 1900,
+      "img": "https://via.placeholder.com/300?text=Adidas+Solar+Boost",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Solar+Boost+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Solar+Boost+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Solar+Boost+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Solar Boost, con tecnología de amortiguación y retorno de energía para una carrera suave.",
+      "stock": 34
+    },
+    {
+      "id": 35,
+      "nombre": "Adidas Copa Mundial",
+      "precio": 1800,
+      "img": "https://via.placeholder.com/300?text=Adidas+Copa+Mundial",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Copa+Mundial+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Copa+Mundial+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Copa+Mundial+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Copa Mundial, un clásico del fútbol con comodidad y rendimiento probados.",
+      "stock": 35
+    },
+    {
+      "id": 36,
+      "nombre": "Adidas Terrex Swift R2 GTX",
+      "precio": 2000,
+      "img": "https://via.placeholder.com/300?text=Adidas+Terrex+Swift+R2+GTX",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Terrex+Swift+R2+GTX+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Terrex+Swift+R2+GTX+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Terrex+Swift+R2+GTX+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Terrex Swift R2 GTX, diseñadas para el rendimiento en terrenos difíciles con impermeabilidad GORE-TEX.",
+      "stock": 36
+    },
+    {
+      "id": 37,
+      "nombre": "Adidas Gazelle",
+      "precio": 1700,
+      "img": "https://via.placeholder.com/300?text=Adidas+Gazelle",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Gazelle+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Gazelle+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Gazelle+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Gazelle, con un diseño clásico y detalles icónicos para un estilo casual.",
+      "stock": 37
+    },
+    {
+      "id": 38,
+      "nombre": "Adidas Samba",
+      "precio": 1500,
+      "img": "https://via.placeholder.com/300?text=Adidas+Samba",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Samba+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Samba+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Samba+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas Samba, un clásico de estilo indoor con un toque retro.",
+      "stock": 38
+    },
+    {
+      "id": 39,
+      "nombre": "Adidas EQT Gazelle",
+      "precio": 1600,
+      "img": "https://via.placeholder.com/300?text=Adidas+EQT+Gazelle",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=EQT+Gazelle+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=EQT+Gazelle+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=EQT+Gazelle+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Zapatillas Adidas EQT Gazelle, con un diseño moderno que combina lo mejor del pasado y del presente.",
+      "stock": 39
+    },
+    {
+      "id": 40,
+      "nombre": "Adidas Adilette",
+      "precio": 1200,
+      "img": "https://via.placeholder.com/300?text=Adidas+Adilette",
+      "imgdetail": {
+        "detail2": "https://via.placeholder.com/275?text=Adilette+Detail2",
+        "detail3": "https://via.placeholder.com/275?text=Adilette+Detail3",
+        "detail4": "https://via.placeholder.com/275?text=Adilette+Detail4"
+      },
+      "categoria": "adidas",
+      "descripcion": "Sandalias Adidas Adilette, cómodas y ligeras para el uso diario.",
+      "stock": 40
+    }
+  ]
