@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailContainer";
 import Nav from "../components/navBar/Nav";
 import CartView from "../components/CartView/CartView";
-import Checkout from "../components/checkout/Checkout";
+import Checkout from "../components/Checkout/Checkout";
 import LoginScreen from "../components/LoginScreen/LoginScreen";
 
 
