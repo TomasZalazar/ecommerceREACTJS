@@ -22,16 +22,6 @@ const Boton = ({ children, className = "", onClick, disabled = false }) => {
     </button>
   );
 };
-{
-  /* <button className="h 
-  hover:border-sky-400 
-  hover:text-black 
-  hover:bg-cyan-300 
-  rounded-xl 
-  border 
-  h-10 
-  w-36 
-  m-auto ">Agregar al carrito</button> */
-}
+
 
 export default Boton;

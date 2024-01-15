@@ -17,7 +17,7 @@ import LoginScreen from "../components/LoginScreen/LoginScreen";
         <Nav />
         {
           user.logged
-          ?
+                ?
           <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route
@@ -31,7 +31,7 @@ import LoginScreen from "../components/LoginScreen/LoginScreen";
           
           <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
-        :
+              :
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
           <Route  path="*" element={<Navigate to={"/login"} />}/>

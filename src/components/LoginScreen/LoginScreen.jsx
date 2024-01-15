@@ -1,9 +1,10 @@
 import { useContext, useState } from "react";
 import "./LoginScreen.css";
 import { UserContext } from "../../context/UserContext";
+import Swal from 'sweetalert2';
 
 const LoginScreen = () => {
-  const { login, register } = useContext(UserContext);
+  const { login, register, googleLogin } = useContext(UserContext);
 
   const [values, setValues] = useState({
     email: "",
@@ -17,9 +18,61 @@ const LoginScreen = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    login(values);
+
+    if (!values.email || !values.password) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Campos vacíos',
+        text: 'Por favor, completa todos los campos',
+      });
+      return;
+    }
+
+    try {
+      await login(values);
+      Swal.fire({
+        icon: 'success',
+        title: '¡Inicio de sesión exitoso!',
+        showConfirmButton: false,
+        timer: 1500
+      });
+      
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al iniciar sesión',
+        text: 'Verifica tus credenciales',
+      });
+    }
+  };
+
+  const handleRegister = async () => {
+    if (!values.email || !values.password) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Campos vacíos',
+        text: 'Por favor, completa todos los campos',
+      });
+      return;
+    }
+
+    try {
+      await register(values);
+      Swal.fire({
+        icon: 'success',
+        title: '¡Registro exitoso!',
+        text: 'Tu cuenta ha sido creada correctamente.',
+      });
+      
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al registrar',
+        text: 'Verifica tus credenciales',
+      });
+    }
   };
   return (
     <div className="login-container">
@@ -36,6 +89,7 @@ const LoginScreen = () => {
               className="border p-2"
               value={values.email}
               onChange={handleInputChange}
+              autoComplete="email"
             />
             <label>Email</label>
           </div>
@@ -46,6 +100,7 @@ const LoginScreen = () => {
               className="border p-2"
               value={values.password}
               onChange={handleInputChange}
+              autoComplete="current-password"
             />
             <label>Password</label>
           </div>
@@ -53,10 +108,11 @@ const LoginScreen = () => {
             <button type="submit">Ingresar</button>
           </center>
         </form>
+        <div className="flex gap-4 justify-around mt-8" >
         <button
             className={`
-             bg-sky-700 text-white 
-            w-20
+             bg-sky-900 text-white 
+            w-24
             h-9
             border
             rounded-l
@@ -66,37 +122,16 @@ const LoginScreen = () => {
             hover:bg-sky-500
             text-l
             font-semibold
+            flex items-center justify-center 
             `}
-            onClick={() => register(values)}
+            onClick={handleRegister}
           >
             registrate
           </button>
-      </div>
-
-      {/* <div className="w-80 h-96 bg-sky-100 rounded-xl">
-        <h2 className="text-3xl p-8 font-semibold ">LOGIN</h2>
-        <hr />
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-4  w-80">
-          <input
-            type="email"
-            name="email"
-            placeholder="Email ej: email@email.com"
-            className="border p-2"
-            value={values.email}
-            onChange={handleInputChange}
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="border p-2"
-            value={values.password}
-            onChange={handleInputChange}
-          />
-          <button
+        <button
             className={`
-             bg-sky-700 text-white 
-            w-20
+             bg-sky-900 text-white 
+            w-56
             h-9
             border
             rounded-l
@@ -107,12 +142,14 @@ const LoginScreen = () => {
             text-l
             font-semibold
             `}
-            type="submit"
+            onClick={googleLogin}
           >
-            Ingresar
+            Iniciar sesión con Google
           </button>
-        </form>
-      </div> */}
+        </div>
+      
+      </div>
+
     </div>
   );
 };

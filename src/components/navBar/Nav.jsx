@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { SiNike } from "react-icons/si";
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 import NavBurger from "./NavBurg";
+import { UserContext } from "../../context/UserContext";
+import Boton from "../../reutilizables/Boton";
 
 
 
@@ -28,6 +30,7 @@ const Nav = () => {
       href: "/productos/nike",
     },
   ];
+  const {user, logout} = useContext(UserContext)
   const [click,setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -78,6 +81,20 @@ const Nav = () => {
           <NavBurger isOpen={click} onClose={closeMenu} />
         </div>
       </div>
+        <div className="flex mx-40 justify-end items-center  text-white">
+          {
+            user.logged
+             &&
+            <div className="flex  justify-between gap-4 mb-4">
+              <div className="flex gap-1 items-center">
+              <img  src="src/assets/user.svg" alt="user foto" />
+              <h1 className="text-sm">User : {user.email}</h1>
+                
+              <button className="w-16 h-5 rounded-sm text-sm font-semibold hover:bg-slate-100 bg-slate-300 text-black " onClick={logout}>Logout</button>
+              </div>
+            </div> 
+                }
+        </div>
     </nav>
   );
 };
