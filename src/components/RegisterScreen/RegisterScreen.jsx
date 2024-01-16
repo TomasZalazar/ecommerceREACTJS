@@ -50,9 +50,14 @@ const RegisterScreen = () => {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h2 className="relative text-4xl font-semibold  text-gray-400 mb-8">
-          REGISTRO
+      <div className=" m-2 items-center  justify-around ">
+        <h2 className="relative text-4xl font-semibold  text-gray-100 mb-8">
+        👟 TodoZapas 👟
         </h2>
+        </div>
+        <h3 className="relative text-3xl font-semibold  text-gray-400 mb-8">
+          REGISTRO
+        </h3>
 
         <form onSubmit={handleRegister}>
           <div className="user-box">

@@ -78,10 +78,14 @@ const LoginScreen = () => {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h2 className="relative text-4xl font-semibold  text-gray-400 mb-8">
-          LOGIN
+        <div className=" m-2 items-center  justify-around ">
+        <h2 className="relative text-4xl font-semibold  text-gray-100 mb-8">
+        👟 TodoZapas 👟
         </h2>
-
+        </div>
+        <h3 className="flex items-start relative text-3xl font-semibold  text-gray-400 mb-8">
+          Login
+        </h3>
         <form onSubmit={handleSubmit}>
           <div className="user-box">
             <input
@@ -106,7 +110,7 @@ const LoginScreen = () => {
             <label>Password</label>
           </div>
           <center>
-            <button type="submit">Ingresar</button>
+            <button type="submit">INGRESAR</button>
           </center>
         </form>
         <div className="flex gap-4 justify-around mt-8" >
@@ -130,7 +134,7 @@ const LoginScreen = () => {
             `}
           
           >
-            registrate
+            Registrarse
           </button>
         </Link>
         
