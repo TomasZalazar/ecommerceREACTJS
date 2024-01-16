@@ -7,6 +7,7 @@ import Nav from "../components/navBar/Nav";
 import CartView from "../components/CartView/CartView";
 import Checkout from "../components/Checkout/Checkout";
 import LoginScreen from "../components/LoginScreen/LoginScreen";
+import RegisterScreen from "../components/RegisterScreen/RegisterScreen";
 
 
 
@@ -34,6 +35,7 @@ import LoginScreen from "../components/LoginScreen/LoginScreen";
               :
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
+          <Route path="/register" element={<RegisterScreen />} /> 
           <Route  path="*" element={<Navigate to={"/login"} />}/>
         </Routes>
         }

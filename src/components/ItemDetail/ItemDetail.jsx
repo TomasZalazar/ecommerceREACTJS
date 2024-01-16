@@ -22,16 +22,16 @@ const ItemDetail = ({ item }) => {
   };
   return (
     <>
-      <div className="flex flex-col justify-between lg:flex-row mt-10">
+      <div className="flex flex-col  justify-between lg:flex-row mt-10">
         {/* imagenPRDO */}
-        <div className="flex flex-col gap-6 w-96 h-96 mr-8">
-          <div >
+        <div className="flex flex-col  gap-6 w-96 h-96 mr-8">
+          <div>
             <Boton onClick={handleVolver}>Pagina anterior</Boton>
           </div>
           <img
             src={item.img}
             alt="imagen producto"
-            className="relative z-500 w-full h-full aspect-square object-cover rounded-xl"
+            className="relative z-500 w-full h-full aspect-square  rounded-xl"
           />
         </div>
         {/* sobreElProd */}
@@ -42,12 +42,11 @@ const ItemDetail = ({ item }) => {
           </div>
           <p className="text-xl w-80 ">{item.descripcion}</p>
           <p className="text-2xl font-bold ">${item.precio}</p>
-          {isInCart(item.id) 
-          ? 
-            <Boton className=" text-l w-40">
-              <Link to="/cart">Terminar mi compra</Link>
-            </Boton>
-           : 
+          {isInCart(item.id) ? (
+            <Link to="/cart">
+              <Boton className=" text-l w-40">Terminar mi compra</Boton>
+            </Link>
+          ) : (
             <>
               <QuantitySelector
                 cantidad={cantidad}
@@ -56,7 +55,7 @@ const ItemDetail = ({ item }) => {
               />
               <Boton onClick={handleAgregar}>Agregar al carrito</Boton>
             </>
-          }
+          )}
         </div>
       </div>
     </>

@@ -1,11 +1,10 @@
 import { useContext, useState } from "react";
-import "./LoginScreen.css";
+import "./RegisterScreen.css"
 import { UserContext } from "../../context/UserContext";
 import Swal from 'sweetalert2';
-import { Link } from "react-router-dom";
 
-const LoginScreen = () => {
-  const { login, register, googleLogin } = useContext(UserContext);
+const RegisterScreen = () => {
+  const { register, googleLogin } = useContext(UserContext);
 
   const [values, setValues] = useState({
     email: "",
@@ -19,37 +18,9 @@ const LoginScreen = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
 
-    if (!values.email || !values.password) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Campos vacíos',
-        text: 'Por favor, completa todos los campos',
-      });
-      return;
-    }
-
-    try {
-      await login(values);
-      Swal.fire({
-        icon: 'success',
-        title: '¡Inicio de sesión exitoso!',
-        showConfirmButton: false,
-        timer: 1500
-      });
-      
-    } catch (error) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Error al iniciar sesión',
-        text: 'Verifica tus credenciales',
-      });
-    }
-  };
-
-  const handleRegister = async () => {
     if (!values.email || !values.password) {
       Swal.fire({
         icon: 'error',
@@ -75,14 +46,15 @@ const LoginScreen = () => {
       });
     }
   };
+
   return (
     <div className="login-container">
       <div className="login-box">
         <h2 className="relative text-4xl font-semibold  text-gray-400 mb-8">
-          LOGIN
+          REGISTRO
         </h2>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleRegister}>
           <div className="user-box">
             <input
               type="email"
@@ -101,19 +73,16 @@ const LoginScreen = () => {
               className="border p-2"
               value={values.password}
               onChange={handleInputChange}
-              autoComplete="current-password"
+              autoComplete="new-password" // Cambiado a new-password para indicar que es un campo de contraseña nueva
             />
             <label>Password</label>
           </div>
           <center>
-            <button type="submit">Ingresar</button>
+            <button type="submit">Registrarse</button>
           </center>
         </form>
         <div className="flex gap-4 justify-around mt-8" >
-        <Link
-        to="/register"
-        >
-        <button
+          <button
             className={`
              bg-sky-900 text-white 
             w-36
@@ -128,26 +97,6 @@ const LoginScreen = () => {
             font-semibold
             flex items-center justify-center 
             `}
-          
-          >
-            registrate
-          </button>
-        </Link>
-        
-        <button
-            className={`
-             bg-sky-900 text-white 
-             w-72
-             h-14
-            border
-            rounded
-            ring-offset-neutral-900
-            hover:border-sky-500
-            hover:text-white
-            hover:bg-sky-500
-            text-l
-            font-semibold
-            `}
             onClick={googleLogin}
           >
             Iniciar sesión con Google
@@ -155,9 +104,8 @@ const LoginScreen = () => {
         </div>
       
       </div>
-
     </div>
   );
 };
 
-export default LoginScreen;
+export default RegisterScreen;
