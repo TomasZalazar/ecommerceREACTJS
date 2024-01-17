@@ -51,7 +51,7 @@ const RegisterScreen = () => {
     <div className="login-container">
       <div className="login-box">
       <div className=" m-2 items-center  justify-around ">
-        <h2 className="relative text-4xl font-semibold  text-gray-100 mb-8">
+        <h2 className="relative text-2xl font-semibold  text-gray-100 mb-8">
         👟 TodoZapas 👟
         </h2>
         </div>
