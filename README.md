@@ -41,7 +41,6 @@ TODOZAPAS es tu destino exclusivo para adquirir las zapatillas más modernas y e
 - React
 - React DOM
 - React Router DOM
-- Styled Components
 - Vite
 - SweetAlert2
 
@@ -68,7 +67,6 @@ El proceso de desarrollo de TODOZAPAS utilizando React fue una inmersión profun
 
 Explorar las relaciones entre componentes fue esencial para garantizar una navegación intuitiva. La modularidad de React permitió una estructura limpia y mantenible, facilitando la adaptabilidad a cambios y nuevas funcionalidades. Descubrí la flexibilidad de los hooks para gestionar efectos y ciclos de vida, mejorando la interactividad del sitio.
 
-El desarrollo de TODOZAPAS no solo fue un proceso técnico, sino una travesía de comprensión profunda de cómo los elementos interactúan y se comunican en el ecosistema React. Cada descubrimiento, desde la creación de componentes hasta la implementación de contextos y la gestión del estado, contribuyó a la creación de una experiencia de usuario envolvente y altamente funcional. 💻🚀
 
 ## Instalación ⚙️
 
