@@ -4,10 +4,6 @@ TODOZAPAS es tu destino exclusivo para adquirir las zapatillas más modernas y e
 
 
 
-![Ejemplo de TODOZAPAS](./src/assets/gif/GifTodoZapas.gif)
-
-
-
 ## Funcionalidades Clave
 
 - **Inicio de Sesión y Registro de Usuario:**
@@ -66,6 +62,12 @@ TODOZAPAS es tu destino exclusivo para adquirir las zapatillas más modernas y e
 El proceso de desarrollo de TODOZAPAS utilizando React fue una inmersión profunda en la construcción de interfaces dinámicas y eficientes. Inicialmente, me sumergí en la comprensión de los fundamentos de React, desentrañando la lógica de los componentes y cómo se vinculan. A medida que avanzaba, la gestión del estado se volvió clave, y la implementación de contextos se reveló como una herramienta poderosa para compartir información entre componentes de manera más eficiente.
 
 Explorar las relaciones entre componentes fue esencial para garantizar una navegación intuitiva. La modularidad de React permitió una estructura limpia y mantenible, facilitando la adaptabilidad a cambios y nuevas funcionalidades. Descubrí la flexibilidad de los hooks para gestionar efectos y ciclos de vida, mejorando la interactividad del sitio.
+
+
+## Vista Previa Interactiva 🎥
+Sumérgete en TODOZAPAS con nuestra vista previa interactiva.
+![Ejemplo de TODOZAPAS](./src/assets/gif/GifTodoZapas.gif)
+
 
 
 ## Instalación ⚙️
